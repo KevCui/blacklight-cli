@@ -20,13 +20,13 @@ Quote from [Blacklight](https://themarkup.org/blacklight) website: _"...Blacklig
 ## Usage
 
 ```bash
-$ ./blacklight.py "<url>"
+$ ./blacklight "<url>"
 ```
 
 ### Example
 
 ```
-$ ./blacklight.py 'kevcui.github.io'
+$ ./blacklight 'kevcui.github.io'
 > Inspection result:
   0 No ad trackers found on this site.
   0 Third-party cookies not found.
@@ -38,7 +38,7 @@ $ ./blacklight.py 'kevcui.github.io'
 ```
 
 ```
-$ ./blacklight.py 'www.nytimes.com'
+$ ./blacklight 'www.nytimes.com'
 > Inspection result:
   10 Ad trackers found on this site.
   7 Third-party cookies were found.

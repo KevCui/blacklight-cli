@@ -49,7 +49,7 @@ def printAdCompany(data):
 def main():
     if len(sys.argv) != 2:
         print('\033[91m\033[1m[ERROR]\033[0m\033[0m Wrong input! '
-              + '\nUsage: ./blacklight.py "<url>"')
+              + '\nUsage: ./blacklight "<url>"')
         exit()
 
     if sys.argv[1].startswith('http'):
