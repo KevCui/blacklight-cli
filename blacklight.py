@@ -13,7 +13,8 @@ def callAPI(url):
     response = requests.request("POST", host, data=payload, headers=headers)
     responseJson = json.loads(response.text)
     if 'error_message' in responseJson.keys():
-        print('[red bold][[ERROR]][/red bold] ' + responseJson['message'])
+        print('\033[91m\033[1m[ERROR]\033[0m\033[0m '
+              + responseJson['nicer_error_message'])
         exit()
     return responseJson
 
