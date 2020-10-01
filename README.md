@@ -1,6 +1,6 @@
 # blacklight-cli
 
-> Use [Blacklight](https://themarkup.org/blacklight) in your terminal
+> Use [Blacklight](https://themarkup.org/blacklight) service in your terminal
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@
 
 ## What's Blacklight?
 
-Quote from [Blacklight](https://themarkup.org/blacklight) website: "...Blacklight is a real-time website privacy inspector. It will scan website and reveal the specific user-tracking technologies on the site—and who’s getting your data. You may be surprised at what you learn..."\_
+Quote from [Blacklight](https://themarkup.org/blacklight) website: _"...Blacklight is a real-time website privacy inspector. It will scan website and reveal the specific user-tracking technologies on the site—and who’s getting your data. You may be surprised at what you learn..."_
 
 ## Dependency
 
@@ -25,7 +25,7 @@ $ ./blacklight.py "<url>"
 
 ### Example
 
-```bash
+```
 $ ./blacklight.py 'kevcui.github.io'
 > Inspection result:
   0 No ad trackers found on this site.
@@ -37,7 +37,7 @@ $ ./blacklight.py 'kevcui.github.io'
   0 Google Analytics' "remarketing audiences" feature not found.
 ```
 
-```bash
+```
 $ ./blacklight.py 'www.nytimes.com'
 > Inspection result:
   10 Ad trackers found on this site.
