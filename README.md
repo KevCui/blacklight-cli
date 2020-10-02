@@ -5,17 +5,12 @@
 ## Table of Contents
 
 - [What's Blacklight?](#whats-blacklight)
-- [Dependency](#dependency)
 - [Usage](#usage)
   - [Example](#example)
 
 ## What's Blacklight?
 
 Quote from [Blacklight](https://themarkup.org/blacklight) website: _"...Blacklight is a real-time website privacy inspector. It will scan website and reveal the specific user-tracking technologies on the site—and who’s getting your data. You may be surprised at what you learn..."_
-
-## Dependency
-
-- [requsts](https://requests.readthedocs.io/en/master/user/install/#install)
 
 ## Usage
 
