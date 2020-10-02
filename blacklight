@@ -2,16 +2,23 @@
 # -*- coding: utf-8 -*-
 import json
 import re
-import requests
 import sys
+import urllib.request
 
 
 def callAPI(url):
-    host = "https://blacklight.api.themarkup.org/"
+    host = 'https://blacklight.api.themarkup.org/'
     payload = '{ "inUrl" : "' + url + '"}'
-    headers = {'content-type': 'text/plain;charset=UTF-8'}
-    response = requests.request("POST", host, data=payload, headers=headers)
-    responseJson = json.loads(response.text)
+
+    request = urllib.request.Request(
+        url=host,
+        data=payload.encode('utf-8'),
+        method='POST')
+    request.add_header('content-type', 'text/plain;charset=UTF-8')
+
+    with urllib.request.urlopen(request) as response:
+        responseJson = json.loads(response.read().decode("utf-8"))
+
     if 'error_message' in responseJson.keys():
         print('\033[91m\033[1m[ERROR]\033[0m\033[0m '
               + responseJson['nicer_error_message'])
